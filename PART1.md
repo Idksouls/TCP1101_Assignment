@@ -31,12 +31,12 @@ List down the contribution of each group members.
 
 For example:
 
-### Tony Stark
+### Isaiah Wong Terjie
 
 1. Randomly generate game board.
 2. *add more*
 
-### Steve Rogers
+### Javier Austin Anak Jawa
 
 1. Zombie movement and attack behaviour.
 2. *add more*
