@@ -29,8 +29,6 @@ Describe the additional features that has been implemented.
 
 List down the contribution of each group members.
 
-For example:
-
 ### Isaiah Wong Terjie
 
 1. Randomly generate game board.
