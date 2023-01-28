@@ -32,7 +32,7 @@ Please DO NOT change the Progress Log below. Leave it as it is.
 Please replace the following with your group members' names. 
 
 - Isaiah Wong Terjie 1211101376
-- Javier Austin Anak Jawa
+- Javier Austin Anak Jawa 1211100857
 
 
 
