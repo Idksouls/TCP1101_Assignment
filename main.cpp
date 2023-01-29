@@ -5,7 +5,7 @@
 // Names: ISAIAH WONG TERJIE | JAVIER AUSTIN ANAK JAWA
 // IDs: 1211101376 | 1211100857
 // Emails: 1211101376@student.mmu.edu.my | 1211100857@student.mmu.edu.my
-// Phones: 011-2327-1713 | MEMBER_PHONE_2 | MEMBER_PHONE_3
+// Phones: 011-2327-1713 | 019-3669511
 // *********************************************************
 
 // TODO: Fill in the missing information above and delete this line.
@@ -18,6 +18,20 @@
 #include <ctime>   // for time() in srand( time(NULL) );
 #include <iomanip> // for setw()
 using namespace std;
+
+void helpCommand()
+{
+    cout << "Commands" << endl;
+    cout << "1. up    - Move up." << endl;
+    cout << "2. down  - Move down." << endl;
+    cout << "3. left  - Move left." << endl;
+    cout << "4. right - Move right." << endl;
+    cout << "5. arrow - Change the direction of an arrow." << endl;
+    cout << "6. help  - Display these user commands." << endl;
+    cout << "7. save  - Save the game." << endl;
+    cout << "8. load  - Load a game." << endl;
+    cout << "9. quit  - Quit the game." << endl;
+}
 
 class Board
 {
@@ -123,6 +137,8 @@ void Board::display() const
 }
 
 
+
+
 int main()
 {
     int Row,Col;
@@ -138,6 +154,20 @@ int main()
     Board board;
     board.init(Row,Col);
     board.display();
+
+    string input;
+    cout << "Enter a command:\n"; cin >> input;
+
+    if(input == "help")
+    {
+        helpCommand();
+    }
+    else
+    {
+        cout << "Invalid command. Type 'help' for available commands.\n";
+
+    }
+
 
 
     pf::Pause();
