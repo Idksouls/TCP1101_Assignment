@@ -31,13 +31,13 @@ List down the contribution of each group members.
 
 ### Isaiah Wong Terjie
 
-1. Randomly generate game board.
-2. *add more*
+1. Created the GameBoard.
+2. Spawn Alien in the center of the GameBoard.
 
 ### Javier Austin Anak Jawa
 
-1. Zombie movement and attack behaviour.
-2. *add more*
+1. Prepared the documentation for Part 1.
+2. Created the helpCommand function.
 
 ## Problems Encountered & Solutions
 
