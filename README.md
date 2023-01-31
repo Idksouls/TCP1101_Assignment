@@ -14,6 +14,7 @@ For example:
 
 ```
 g++ main.cpp 
+g++ .\main.exe
 ```
 
 ## User Manual
