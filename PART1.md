@@ -10,16 +10,20 @@ Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
 List all the features completed.
 
-1. Cool Feature #1
-2. Cool Feature #2
+1. Alien spawn #1
+2. Help commands #2
 3. *add more*
 
 ### To Do
 
 List all the features not yet done. Remove this section if there is no incomplete requirements.
 
-1. Cool Feature #1
-2. *add more*
+1. Alien Movement 
+2. Rocks
+3. Pods
+4. Zombies
+5. Health
+6. Damage
 
 ## Additional Features
 
