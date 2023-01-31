@@ -24,10 +24,6 @@ List all the features not yet done. Remove this section if there is no incomplet
 5. Health
 6. Damage
 
-## Additional Features
-
-Describe the additional features that has been implemented.
-
 ## Contributions
 
 List down the contribution of each group members.
@@ -44,4 +40,4 @@ List down the contribution of each group members.
 
 ## Problems Encountered & Solutions
 
-Describe the problems encountered and provide the solutions / plan for the solutions.
+No problems encountered at the moment.
