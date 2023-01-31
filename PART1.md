@@ -12,7 +12,6 @@ List all the features completed.
 
 1. Alien spawn #1
 2. Help commands #2
-3. *add more*
 
 ### To Do
 
