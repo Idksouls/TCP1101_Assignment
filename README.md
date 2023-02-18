@@ -8,8 +8,6 @@ Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
 ## Compilation Instructions
 
-Provide instructions on how to compile your program, especially when it is non-trivial.
-
 For example:
 
 ```
@@ -18,8 +16,6 @@ g++ .\main.exe
 ```
 
 ## User Manual
-
-Please provide the user manual on how to use your program.
 
 How to start the game?
 1. User must input their prefered number of rows and columns for their gameboard.
