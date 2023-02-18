@@ -33,6 +33,31 @@ void helpCommand()
     cout << "9. quit  - Quit the game." << endl;
 }
 
+void quitCommand()
+{
+    char decision;
+    do
+    {
+        cout << "Are you sure you want to quit? (y/n) => ";
+        cin >> decision;
+        if (decision == 'y')
+        {
+            cout << "Thank you for playing!" << endl;
+            exit(0);
+        }
+        else if (decision == 'n')
+        {
+            cout << "Returning to game..." << endl;
+            system("pause");
+            return; // return back to the game
+        }
+        else
+        {
+            cout << "Invalid input. Please enter 'y' or 'n'." << endl;
+        }
+    } while (true);
+}
+
 class Board
 {
 private:
@@ -198,17 +223,26 @@ int main()
     board.init(Row, Col);
     board.display();
 
-    string input;
-    cout << "Enter a command: ";
-    cin >> input;
-
-    if (input == "help")
+    while (true)
     {
-        helpCommand();
-    }
-    else
-    {
-        cout << "Invalid command. Type 'help' for available commands.\n";
+        string input;
+        cout << "Enter a command: ";
+        cin >> input;
+        if (input == "help")
+        {
+            helpCommand();
+            cout << "Returning to game..." << endl;
+            system("pause");
+        }
+        else if (input == "quit")
+        {
+            quitCommand();
+            return 0;
+        }
+        else
+        {
+            cout << "Invalid command. Type 'help' for available commands.\n";
+        }
     }
 
     pf::Pause();
