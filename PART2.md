@@ -36,7 +36,7 @@ List down the contribution of each group members.
 
 1. Created the GameBoard.
 2. Spawn Alien in the center of the GameBoard.
-3. Created the Quit game function.
+3. Created the Quit Game function.
 4. Created the default game setting feature.
 
 ### Javier Austin Anak Jawa
