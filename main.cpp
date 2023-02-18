@@ -8,6 +8,8 @@
 // Phones: 011-2327-1713 | 019-3669511
 // *********************************************************
 
+// TODO: Fill in the missing information above and delete this line.
+
 #include "pf/helper.cpp"
 #include <iostream>
 #include <string>
@@ -38,18 +40,20 @@ private:
     int Row_, Col_;
     int alienRow, alienCol;
 
-
 public:
     Board();
     void init(int Row, int Col);
     void display() const;
+    int ZombieCount = 2;
+
+    int getZombieCount();
 };
 
 Board::Board()
 {
     Row_ = 15;
     Col_ = 5;
-    init (Row_,Col_);
+    init(Row_, Col_);
     alienRow = Col_ / 2;
     alienCol = Row_ / 2;
 }
@@ -61,7 +65,7 @@ void Board::init(int Row, int Col)
     char objects[] = {' ', ' ', '^', 'v', '<', '>', 'h', 'p', 'r', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
     char zombie[] = {'Z'};
     int noOfObjects = 20; // number of objects in the objects array
-    int noOfZombie = 20;
+    int ZombieCount = 20;
     // create dynamic 2D array using vector
     map_.resize(Col_); // create empty rows
     for (int i = 0; i < Col_; ++i)
@@ -76,32 +80,33 @@ void Board::init(int Row, int Col)
         {
             int objNo = rand() % noOfObjects;
             map_[i][j] = objects[objNo];
-            int zomNo = rand() % noOfZombie;
+            int zomNo = rand() % ZombieCount;
             map_[i][j] = zombie[zomNo];
         }
     }
-    map_[Col_/2][Row_/2] = 'A';
+    map_[Col_ / 2][Row_ / 2] = 'A';
 }
-
 
 void Board::display() const
 {
-    cout << " --__--__--__--__--__--__--__--_--__--__--__--__--__--__--_ " << endl;
+    cout << " --__--__--__--__--__--__--__--_--__--__--__--__--__--__--_" << endl;
     cout << " = Hello Adventurer are you ready to kill some ZOMBIESS!!! =" << endl;
-    cout << " __--__--__--__--__--__--__--__--__--__--__--__--__--__--__ " << endl;
+    cout << " __--__--__--__--__--__--__--__--__--__--__--__--__--__--__" << endl;
 
     // for each row
     for (int i = 0; i < Col_; ++i)
     {
         // display upper border of the row
-        cout << " ";
+        cout << "  ";
         for (int j = 0; j < Row_; ++j)
         {
             cout << "+-";
         }
         cout << "+" << endl;
+
         // display row number
-        cout << setw(2) << (Col_ - i);
+        cout << setw(2) << (i + 1);
+
         // display cell content and border of each column
         for (int j = 0; j < Row_; ++j)
         {
@@ -109,15 +114,17 @@ void Board::display() const
         }
         cout << "|" << endl;
     }
+
     // display lower border of the last row
-    cout << " ";
+    cout << "  ";
     for (int j = 0; j < Row_; ++j)
     {
         cout << "+-";
     }
     cout << "+" << endl;
+
     // display column number
-    cout << " ";
+    cout << "  ";
     for (int j = 0; j < Row_; ++j)
     {
         int digit = (j + 1) / 10;
@@ -128,43 +135,80 @@ void Board::display() const
             cout << digit;
     }
     cout << endl;
-    cout << " ";
+    cout << "  ";
     for (int j = 0; j < Row_; ++j)
     {
         cout << " " << (j + 1) % 10;
     }
     cout << endl
          << endl;
-
 }
 int main()
 {
-    int Row,Col;
+    int Row = 15, Col = 5, Row_, Col_;
+    int ZombieCount = 2;
     cout << "Assignment (Part 2)" << endl;
     cout << "Let's Get Started!" << endl;
     srand(time(NULL));
-    cout << "Please Enter Your Desired Dimensions Of The Board"<<endl;
-    cout << "Number of Rows: ";
-    cin >> Row;
-    cout << "Number of Columns: ";
-    cin >> Col;
-    
+
+    char pick;
+    cout << "Default Game Settings" << endl;
+    cout << "=======================" << endl;
+    cout << "Board Rows     : " << Row << endl;
+    cout << "Board Columns  : " << Col << endl;
+    cout << "Zombie Count   : " << ZombieCount << endl
+         << endl;
+
+    cout << "Do you wish to change the game settings? (y/n)?: ";
+    cin >> pick;
+
+    if (pick == 'Y' || pick == 'y')
+    {
+        cout << "Settings" << endl;
+        cout << "==========" << endl;
+        cout << "Number of Rows: ";
+        cin >> Row;
+        while (Row % 2 == 0)
+        {
+            cout << "Please re-enter, value must be an odd number: ";
+            cin >> Row;
+        }
+        cout << "Number of Columns: ";
+        cin >> Col;
+        while (Col % 2 == 0)
+        {
+            cout << "Please re-enter, value must be an odd number: ";
+            cin >> Col;
+        }
+        cout << endl
+             << "Settings Updated." << endl;
+        system("pause");
+    }
+    else if (pick == 'N' || pick == 'n')
+    {
+        cout << "Default Settings Loaded." << endl;
+        system("pause");
+    }
+    else
+    {
+        cout << "Invalid Text" << endl;
+    }
+
     Board board;
-    board.init(Row,Col);
+    board.init(Row, Col);
     board.display();
 
     string input;
-    cout << "Enter a command: "; 
+    cout << "Enter a command: ";
     cin >> input;
 
-    if(input == "help")
+    if (input == "help")
     {
         helpCommand();
     }
     else
     {
         cout << "Invalid command. Type 'help' for available commands.\n";
-
     }
 
     pf::Pause();
