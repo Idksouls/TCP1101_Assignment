@@ -60,8 +60,10 @@ void Board::init(int Row, int Col)
 {
     Row_ = Row;
     Col_ = Col;
-    char objects[] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
-    int noOfObjects = 10; // number of objects in the objects array
+    char objects[] = {' ', ' ', '^', 'v', '<', '>', 'h', 'p', 'r', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
+    char zombie[] = {'Z'};
+    int noOfObjects = 20; // number of objects in the objects array
+    int noOfZombie = 20;
     // create dynamic 2D array using vector
     map_.resize(Col_); // create empty rows
     for (int i = 0; i < Col_; ++i)
@@ -76,6 +78,8 @@ void Board::init(int Row, int Col)
         {
             int objNo = rand() % noOfObjects;
             map_[i][j] = objects[objNo];
+            int zomNo = rand() % noOfZombie;
+            map_[i][j] = zombie[zomNo];
         }
     }
     map_[Col_/2][Row_/2] = 'A';
@@ -84,9 +88,9 @@ void Board::init(int Row, int Col)
 
 void Board::display() const
 {
-    cout << " --__--__--__--__--__--__--__--_--__--__--__--__--__--__--_" << endl;
+    cout << " --__--__--__--__--__--__--__--_--__--__--__--__--__--__--_ " << endl;
     cout << " = Hello Adventurer are you ready to kill some ZOMBIESS!!! =" << endl;
-    cout << " __--__--__--__--__--__--__--__--__--__--__--__--__--__--__" << endl;
+    cout << " __--__--__--__--__--__--__--__--__--__--__--__--__--__--__ " << endl;
 
     // for each row
     for (int i = 0; i < Col_; ++i)
@@ -135,20 +139,16 @@ void Board::display() const
          << endl;
 
 }
-
-
-
-
 int main()
 {
     int Row,Col;
-    cout << "Assignment (Part 1)" << endl;
+    cout << "Assignment (Part 2)" << endl;
     cout << "Let's Get Started!" << endl;
     srand(time(NULL));
     cout << "Please Enter Your Desired Dimensions Of The Board"<<endl;
-    cout << "Number of Rows: "<<endl;
+    cout << "Number of Rows: ";
     cin >> Row;
-    cout << "Number of Columns: "<<endl;
+    cout << "Number of Columns: ";
     cin >> Col;
     
     Board board;
@@ -156,7 +156,8 @@ int main()
     board.display();
 
     string input;
-    cout << "Enter a command:\n"; cin >> input;
+    cout << "Enter a command: "; 
+    cin >> input;
 
     if(input == "help")
     {
@@ -167,8 +168,6 @@ int main()
         cout << "Invalid command. Type 'help' for available commands.\n";
 
     }
-
-
 
     pf::Pause();
 }
