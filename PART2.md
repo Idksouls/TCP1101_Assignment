@@ -10,9 +10,8 @@ Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
 List all the features completed.
 
-1. Cool Feature #1
-2. Cool Feature #2
-3. *add more*
+1. Alien spawn
+2. Help commands
 
 ### To Do
 
@@ -29,17 +28,15 @@ Describe the additional features that has been implemented.
 
 List down the contribution of each group members.
 
-For example:
-
 ### Isaiah Wong Terjie
 
 1. Created the GameBoard.
 2. Spawn Alien in the center of the GameBoard.
 
-### Steve Rogers
+### Javier Austin Anak Jawa
 
-1. Zombie movement and attack behaviour.
-2. *add more*
+1. Prepared the documentation for Part 1.
+2. Created the helpCommand function.
 
 ## Problems Encountered & Solutions
 
