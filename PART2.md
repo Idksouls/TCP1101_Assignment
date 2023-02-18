@@ -31,19 +31,14 @@ List down the contribution of each group members.
 
 For example:
 
-### Tony Stark
+### Isaiah Wong Terjie
 
-1. Randomly generate game board.
-2. *add more*
+1. Created the GameBoard.
+2. Spawn Alien in the center of the GameBoard.
 
 ### Steve Rogers
 
 1. Zombie movement and attack behaviour.
-2. *add more*
-
-### Dr. Strange
-
-1. Implement all game objects.
 2. *add more*
 
 ## Problems Encountered & Solutions
