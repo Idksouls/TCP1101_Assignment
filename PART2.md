@@ -10,8 +10,12 @@ Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
 List all the features completed.
 
-1. Alien spawn
-2. Help commands
+1. Alien spawn on the gameboard
+2. Help command
+3. Quit command
+4. Zombie spawn on the gameboard
+5. Game objects spawn on the gameboard
+6. Default game setting feature
 
 ### To Do
 
@@ -32,11 +36,15 @@ List down the contribution of each group members.
 
 1. Created the GameBoard.
 2. Spawn Alien in the center of the GameBoard.
+3. Created the Quit game function.
+4. Created the default game setting feature.
 
 ### Javier Austin Anak Jawa
 
 1. Prepared the documentation for Part 1.
 2. Created the helpCommand function.
+3. Made Zombie spawn on the gameboard.
+4. Made Game Object spawn on the gameboard.
 
 ## Problems Encountered & Solutions
 
