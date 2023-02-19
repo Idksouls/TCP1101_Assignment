@@ -41,6 +41,12 @@ How to save a game?
 4. Then, user must press "Enter" on their keyboard to save the file.
 5. If "Your game has been saved successfully!" appears on screen, then your file has been successfully saved into your computer.
 
+How to quit a game?
+1. User must enter "quit" or "Quit" in the command.
+2. Then, user must proceed to answer "y" for yes and "n" for no if they want to quit the game.
+3. If user choose "y", then it will proceed to quit the game.
+4. If user choose "n", then it return to game.
+
 ## Progress Log
 
 - [Part 1](PART1.md)
