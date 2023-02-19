@@ -45,3 +45,4 @@ List down the contribution of each group members.
 Describe the problems encountered and provide the solutions / plan for the solutions.
 
 1. Quit game function not working as intended. We modified the quitCommand function into an if else loop as a solution.
+2. Alien movement can't be implement because it will run away from the board. So the solution for it was to remove the movement.
