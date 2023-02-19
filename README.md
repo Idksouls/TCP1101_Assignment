@@ -39,7 +39,7 @@ How to save a game?
 2. User must answer "y" for yes or "n" for no if they want to save a game.
 3. If user choose "y", then they must enter the filename of the current file that they wish to save.
 4. Then, user must press "Enter" on their keyboard to save the file.
-5. If "Your game has been saved successfully!" appear on the screen, then your file has been successfully saved into your computer.
+5. If "Your game has been saved successfully!" appears on screen, then your file has been successfully saved into your computer.
 
 ## Progress Log
 
