@@ -41,12 +41,12 @@ void quitCommand()
     {
         cout << "Are you sure you want to quit? (y/n) => ";
         cin >> decision;
-        if (decision == 'y')
+        if (decision == 'y'|| decision == 'Y')
         {
             cout << "Thank you for playing!" << endl;
             exit(0);
         }
-        else if (decision == 'n')
+        else if (decision == 'n'|| decision == 'N')
         {
             cout << "Returning to game..." << endl;
             system("pause");
@@ -177,8 +177,17 @@ void Board::display() const
     cout << endl
          << endl;
 }
+
+
 int main()
 {
+    int life_, attack_, range_;
+    int life, attack, range;
+    life_ = life;
+    attack_ = attack;
+    range_ = range;
+    int i;
+
     int Row = 15, Col = 5, Row_, Col_;
     int ZombieCount = 2;
     cout << "Assignment (Part 2)" << endl;
@@ -231,6 +240,14 @@ int main()
     Board board;
     board.init(Row, Col);
     board.display();
+
+    life_ = 200;
+    attack_ = 100;
+    range_ = 10;
+
+    cout << "Alien  :    Life : " << setw(3) << life_ << "| Attack : " << setw(2) << attack_ << endl;
+
+    cout << "Zombie :    Life : " << setw(3) << life_ / 2 << "| Attack : " << setw(2) << attack_ / 2 << " | Range : " << range_ / 2 << endl;
 
     while (true)
     {
