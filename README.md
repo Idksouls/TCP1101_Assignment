@@ -4,7 +4,7 @@ Welcome to Alien VS Zombie! You're about to enter into an outer-space arena wher
 
 ![Alt text](https://github.com/Idksouls/TCP1101_Assignment/blob/main/alienvszombiegame.jpg)
 
-Please provide the YouTube link to your [Video Demo](https://youtube.com).
+[Video Demo](https://youtu.be/n54UazfzaRY).
 
 ## Compilation Instructions
 
