@@ -16,7 +16,7 @@ List all the features completed.
 4. Zombie spawn on the gameboard
 5. Game objects spawn on the gameboard
 6. Default game setting feature
-7. Save file command
+7. Save game command
 
 ## Contributions
 
