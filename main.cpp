@@ -36,27 +36,22 @@ void helpCommand()
 
 void quitCommand()
 {
-    char decision;
-    do
-    {
-        cout << "Are you sure you want to quit? (y/n) => ";
-        cin >> decision;
-        if (decision == 'y'|| decision == 'Y')
-        {
-            cout << "Thank you for playing!" << endl;
-            exit(0);
-        }
-        else if (decision == 'n'|| decision == 'N')
-        {
-            cout << "Returning to game..." << endl;
-            system("pause");
-            return; // return back to the game
-        }
-        else
-        {
-            cout << "Invalid input. Please enter 'y' or 'n'." << endl;
-        }
-    } while (true);
+    string userDecide;
+    cout << "Are you sure you want to exit the Game? (y/n): ";
+    cin >> userDecide;
+
+    if (userDecide == "y"){
+        cout << "Thank you for playing Alien VS Zombie!" << endl;
+        exit(0);
+    }
+    else if (userDecide == "n"){
+        cout << "Return to Game." << endl;
+        system("pause");
+    }
+    else{
+        cout << "Invalid command. Please input 'y' or 'n' only." << endl;
+        system("pause");
+    }
 }
 
 void saveGame(string nameOfFile, string program)
@@ -264,7 +259,6 @@ int main()
         else if (input == "quit" || input == "Quit")
         {
             quitCommand();
-            return 0;
         }
         else if (input == "save" || input == "Save"){
             string userSave;
