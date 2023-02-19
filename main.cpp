@@ -17,6 +17,7 @@
 #include <cstdlib> // for system()
 #include <ctime>   // for time() in srand( time(NULL) );
 #include <iomanip> // for setw()
+#include <fstream>
 using namespace std;
 
 void helpCommand()
@@ -56,6 +57,14 @@ void quitCommand()
             cout << "Invalid input. Please enter 'y' or 'n'." << endl;
         }
     } while (true);
+}
+
+void saveGame(string nameOfFile, string program)
+{
+    ofstream outputFile(nameOfFile);
+    outputFile << program;
+    outputFile.close();
+    cout << "Your game has been saved successfully!" << endl;
 }
 
 class Board
@@ -226,18 +235,36 @@ int main()
     while (true)
     {
         string input;
+        string currentFile;
         cout << "Enter a command: ";
         cin >> input;
-        if (input == "help")
+        if (input == "help" || input == "Help")
         {
             helpCommand();
             cout << "Returning to game..." << endl;
             system("pause");
         }
-        else if (input == "quit")
+        else if (input == "quit" || input == "Quit")
         {
             quitCommand();
             return 0;
+        }
+        else if (input == "save" || input == "Save"){
+            string userSave;
+            cout << "Do you want to save the game? (y/n): ";
+            cin >> userSave;
+
+            if (userSave == "y"){
+                string nameOfFile;
+                cout << "Enter filename: ";
+                cin >> nameOfFile;
+                saveGame(nameOfFile, currentFile);
+            }
+            else{
+                cout << "Return to Game" << endl;
+            }
+            system("pause");
+
         }
         else
         {
