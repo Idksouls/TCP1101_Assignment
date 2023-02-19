@@ -2,7 +2,7 @@
 
 Welcome to Alien VS Zombie! You're about to enter into an outer-space arena where you as an Alien will be put into war against your greatest enemy, the Zombie. So, what are you waiting for? Gear up and prepare for the most epic battle! 
 
-[alt text](alienvszombiegame.jpg)
+[alt text]("C:\Users\javie\Documents\Bachelor in Computer Science\Year 1\Trimester 1\TCP1101_Programming Fundamentals\alienvszombiegame.jpg")
 
 Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
