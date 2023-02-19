@@ -41,3 +41,5 @@ List down the contribution of each group members.
 ## Problems Encountered & Solutions
 
 Describe the problems encountered and provide the solutions / plan for the solutions.
+
+1. Quit game function not working as intended. We modified the quitCommand function into an if else loop as a solution.
