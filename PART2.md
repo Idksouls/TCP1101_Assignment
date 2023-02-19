@@ -16,17 +16,7 @@ List all the features completed.
 4. Zombie spawn on the gameboard
 5. Game objects spawn on the gameboard
 6. Default game setting feature
-
-### To Do
-
-List all the features not yet done. Remove this section if there is no incomplete requirements.
-
-1. Cool Feature #1
-2. *add more*
-
-## Additional Features
-
-Describe the additional features that has been implemented.
+7. Save file command
 
 ## Contributions
 
@@ -45,6 +35,7 @@ List down the contribution of each group members.
 2. Created the helpCommand function.
 3. Made Zombie spawn on the gameboard.
 4. Made Game Object spawn on the gameboard.
+5. Created the save game function.
 
 ## Problems Encountered & Solutions
 
