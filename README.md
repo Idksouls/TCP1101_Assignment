@@ -12,7 +12,7 @@ For example:
 
 ```
 g++ main.cpp 
-g++ .\main.exe
+.\main.exe
 ```
 
 ## User Manual
