@@ -24,10 +24,11 @@ List down the contribution of each group members.
 
 ### Isaiah Wong Terjie
 
-1. Created the GameBoard.
-2. Spawn Alien in the center of the GameBoard.
-3. Created the Quit Game function.
-4. Created the default game setting feature.
+1. Prepared the documentation for Part 1.
+2. Created the GameBoard.
+3. Spawn Alien in the center of the GameBoard.
+4. Created the Quit Game function.
+5. Created the default game setting feature.
 
 ### Javier Austin Anak Jawa
 
