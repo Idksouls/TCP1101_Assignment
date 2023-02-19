@@ -29,6 +29,7 @@ List down the contribution of each group members.
 3. Spawn Alien in the center of the GameBoard.
 4. Created the Quit Game function.
 5. Created the default game setting feature.
+6. Prepared the documentation for Part 2.
 
 ### Javier Austin Anak Jawa
 
@@ -37,6 +38,7 @@ List down the contribution of each group members.
 3. Made Zombie spawn on the gameboard.
 4. Made Game Object spawn on the gameboard.
 5. Created the save game function.
+6. Prepared the documentation for Part 2.
 
 ## Problems Encountered & Solutions
 
